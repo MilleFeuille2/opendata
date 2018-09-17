@@ -1,0 +1,42 @@
+{
+  "ginza": {
+    "railway_id": "odpt.Railway:TokyoMetro.Ginza",
+    "color": "#FF9500"
+  },
+  "marunouchi": {
+    "railway_id": "odpt.Railway:TokyoMetro.Marunouchi",
+    "color": "#F62E36"
+  },
+  "marunouchi_branch": {
+    "railway_id": "odpt.Railway:TokyoMetro.MarunouchiBranch",
+    "color": "#F62E36"
+  },
+  "hibiya": {
+    "railway_id": "odpt.Railway:TokyoMetro.Hibiya",
+    "color": "#B5B5AC"
+  },
+  "tozai": {
+    "railway_id": "odpt.Railway:TokyoMetro.Tozai",
+    "color": "#009BBF"
+  },
+  "chiyoda": {
+    "railway_id": "odpt.Railway:TokyoMetro.Chiyoda",
+    "color": "#00BB85"
+  },
+  "yurakucho": {
+    "railway_id": "odpt.Railway:TokyoMetro.Yurakucho",
+    "color": "#C1A470"
+  },
+  "hanzomon": {
+    "railway_id": "odpt.Railway:TokyoMetro.Hanzomon",
+    "color": "#8F76D6"
+  },
+  "namboku": {
+    "railway_id": "odpt.Railway:TokyoMetro.Namboku",
+    "color": "#00AC9B"
+  },
+  "fukutoshin": {
+    "railway_id": "odpt.Railway:TokyoMetro.Fukutoshin",
+    "color": "#9C5E31"
+  }
+}
