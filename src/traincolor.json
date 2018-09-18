@@ -1,4 +1,5 @@
 {
+//  metro
   "ginza": {
     "railway_id": "odpt.Railway:TokyoMetro.Ginza",
     "color": "#FF9500"
@@ -38,5 +39,130 @@
   "fukutoshin": {
     "railway_id": "odpt.Railway:TokyoMetro.Fukutoshin",
     "color": "#9C5E31"
+  },
+//  JR
+  "musashino": {
+    "railway_id": "odpt.Railway:JR-East.Musashino",
+    "color": "#FFFFFF"
+  },
+  "nambu": {
+    "railway_id": "odpt.Railway:JR-East.Nambu",
+    "color": "#FFFFFF"
+  },
+  "nambu_branch": {
+    "railway_id": "odpt.Railway:JR-East.NambuBranch",
+    "color": "#FFFFFF"
+  },
+  "narita": {
+    "railway_id": "odpt.Railway:JR-East.Narita",
+    "color": "#FFFFFF"
+  },
+  "narita_abikobranch": {
+    "railway_id": "odpt.Railway:JR-East.NaritaAbikoBranch",
+    "color": "#FFFFFF"
+  },
+  "narita_airportbranch": {
+    "railway_id": "odpt.Railway:JR-East.NaritaAirportBranch",
+    "color": "#FFFFFF"
+  },
+  "ryomo": {
+    "railway_id": "odpt.Railway:JR-East.Ryomo",
+    "color": "#FFFFFF"
+  },
+  "ome": {
+    "railway_id": "odpt.Railway:JR-East.Ome",
+    "color": "#FFFFFF"
+  },
+  "yokohama": {
+    "railway_id": "odpt.Railway:JR-East.Yokohama",
+    "color": "#FFFFFF"
+  },
+  "nikko": {
+    "railway_id": "odpt.Railway:JR-East.Nikko",
+    "color": "#FFFFFF"
+  },
+//  keio
+  "keio": {
+    "railway_id": "odpt.Railway:Keio.Keio",
+    "color": "#FFFFFF"
+  },
+  "keio_new": {
+    "railway_id": "odpt.Railway:Keio.KeioNew",
+    "color": "#FFFFFF"
+  },
+  "keio_inokashira": {
+    "railway_id": "odpt.Railway:Keio.Inokashira",
+    "color": "#FFFFFF"
+  },
+  "keio_takao": {
+    "railway_id": "odpt.Railway:Keio.Takao",
+    "color": "#FFFFFF"
+  },
+  "keio_sagamihara": {
+    "railway_id": "odpt.Railway:Keio.Sagamihara",
+    "color": "#FFFFFF"
+  },
+  "keio_keibajo": {
+    "railway_id": "odpt.Railway:Keio.Keibajo",
+    "color": "#FFFFFF"
+  },
+//  odakuyu
+  "odakyu": {
+    "railway_id": "odpt.Railway:Odakyu.Odawara",
+    "color": "#FFFFFF"
+  },
+  "odakyu_enoshima": {
+    "railway_id": "odpt.Railway:Odakyu.Enoshima",
+    "color": "#FFFFFF"
+  },
+  "odakyu_tama": {
+    "railway_id": "odpt.Railway:Odakyu.Tama",
+    "color": "#FFFFFF"
+  },
+//  toei
+  "toei_nipporitoneri": {
+    "railway_id": "odpt.Railway:Toei.Nipporitoneri",
+    "color": "#FFFFFF"
+  },
+  "toei_oedo": {
+    "railway_id": "odpt.Railway:Toei.Oedo",
+    "color": "#FFFFFF"
+  },
+  "toei_asakusa": {
+    "railway_id": "odpt.Railway:Toei.Asakusa",
+    "color": "#FFFFFF"
+  },
+  "toei_shinjuku": {
+    "railway_id": "odpt.Railway:Toei.Shinjuku",
+    "color": "#FFFFFF"
+  },
+  "toei_mita": {
+    "railway_id": "odpt.Railway:Toei.Mita",
+    "color": "#FFFFFF"
+  },
+//  keikyu
+  "keikyu_airport": {
+    "railway_id": "odpt.Railway:Keikyu.Airport",
+    "color": "#FFFFFF"
+  },
+  "keikyu": {
+    "railway_id": "odpt.Railway:Keikyu.Main",
+    "color": "#FFFFFF"
+  },
+  "keikyu_daishi": {
+    "railway_id": "odpt.Railway:Keikyu.Daishi",
+    "color": "#FFFFFF"
+  },
+  "keikyu_kurihama": {
+    "railway_id": "odpt.Railway:Keikyu.Kurihama",
+    "color": "#FFFFFF"
+  },
+  "keikyu_zushi": {
+    "railway_id": "odpt.Railway:Keikyu.Zushi",
+    "color": "#FFFFFF"
+//  seibu
+//  tobu
+//  keisei
+//  twr
   }
 }
