@@ -8,7 +8,7 @@ import urllib
 import urllib.parse
 import urllib.request
 import pandas as pd
-import geopandas as gpd
+# import geopandas as gpd
 import matplotlib.pyplot as plt
 import trainname
 import busname
@@ -219,17 +219,17 @@ def map_station(df):
     for i in range(len(df)):
         folium.CircleMarker(
             location=[df.loc[i, 'lat'], df.loc[i, 'long']],
-            radius=4,
-            popup=df.loc[i, 'station_title']['en'],
-            color='#3186cc',
-            fill_color='#3186cc'
+            radius=1,
+            popup=df.loc[i, 'station_title']['ja'],
+            color='#000000',
+            fill_color='#000000'
         ).add_to(m)
 
     m.save('../output/folium_station.html')
     return m
 
 
-def map_passenger(df_sta, df_pas):
+def map_passenger(m, df_sta, df_pas):
 
     df_color = pd.read_json('./traincolor.json').T
     df = pd.merge(df_sta, df_pas, left_on='sameas', right_on='station_id')
@@ -240,24 +240,24 @@ def map_passenger(df_sta, df_pas):
     long = df.loc[0, 'long']
 
     # foliumを使う
-    m = folium.Map([lat, long], zoom_start=10)
+    # m = folium.Map([lat, long], zoom_start=10)
 
     for i in range(len(df)):
         folium.CircleMarker(
             location=[df.loc[i, 'lat'], df.loc[i, 'long']],
             radius=df.loc[i, 'passenger']['odpt:passengerJourneys'] / 10**4,
-            popup=df.loc[i, 'station_title']['en'],
+            popup=df.loc[i, 'station_title']['ja'],
             color=df.loc[i, 'color'],
             fill_color=df.loc[i, 'color']
         ).add_to(m)
 
     m.save('../output/folium_passenger.html')
 
-    # geopandasを使う
-    df_tokyo = gpd.read_file('../land/tokyo.geojson')
-    ax = df_tokyo[df_tokyo['area_en'] == 'Tokubu'].plot()
-    ax.scatter(df['long'], df['lat'], color='r')
-    plt.savefig('../output/geopandas_passenger.png')
+    # # geopandasを使う
+    # df_tokyo = gpd.read_file('../land/tokyo.geojson')
+    # ax = df_tokyo[df_tokyo['area_en'] == 'Tokubu'].plot()
+    # ax.scatter(df['long'], df['lat'], color='r')
+    # plt.savefig('../output/geopandas_passenger.png')
 
     return m
 
@@ -284,4 +284,4 @@ if __name__ == '__main__':
 
     m = map_station(df_sta)
 
-    map_passenger(df_sta, df_pas)
+    map_passenger(m, df_sta, df_pas)
